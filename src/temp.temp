@@ -1,0 +1,38 @@
+import React from 'react';
+import './styles/App.scss';
+import "tabler-react/dist/Tabler.css";
+
+import { Site, Nav } from "tabler-react";
+
+
+
+function App() {
+  return (
+    <div className="App">
+      <div className="container">
+        <Site>
+          <Site.Wrapper>
+            <Site.Header>
+            </Site.Header>
+            <Site.Nav>
+              <Nav>
+                <Nav.Item icon="user">
+                  Klanten
+              </Nav.Item>
+                <Nav.Item icon="globe">
+                  Bestelbonnen
+              </Nav.Item>
+              </Nav>
+            </Site.Nav>
+
+          </Site.Wrapper>
+        </Site>
+      </div>
+
+
+
+    </div>
+  );
+}
+
+export default App;

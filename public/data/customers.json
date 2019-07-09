@@ -1,0 +1,32 @@
+{
+    "customers": [
+        {
+            "id": "1",
+            "email": "denis.caeyers@me.com",
+            "created" :"",
+            "updated" : "",
+            "first_name" : "Denis",
+            "last_name" : "Caeyers",
+            "address" : "Doornboomstraat 17",
+            "zip" : "2400",
+            "city" : "Mol",
+            "is_business" : false,
+            "business_alias" : null,
+            "btw_nr" : null
+        },
+        {
+            "id": "2",
+            "email": "annelies.vandecruys@hotmail.com",
+            "created" :"",
+            "updated" : "",
+            "first_name" : "Annelies",
+            "last_name" : "Vandecruys",
+            "address" : "Doornboomstraat 17",
+            "zip" : "2400",
+            "city" : "Mol",
+            "is_business" : true,
+            "business_alias " : "Maxannxo", 
+            "btw_nr" : "BE0846266897"
+        }
+    ]
+}
