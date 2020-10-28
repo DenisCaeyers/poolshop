@@ -1,0 +1,19 @@
+{
+  "nieuws": [
+    {
+      "titel": "Molecule Man",
+      "body": "Dit is het nieuws body",
+      "datumtot": "12/12/2020"
+    },
+    {
+      "titel": "Molecule Man 2",
+      "body": "Dit is het nieuws body",
+      "datumtot": "12/12/2020"
+    },
+    {
+      "titel": "Molecule Man 3",
+      "body": "Dit is het nieuws body",
+      "datumtot": "12/12/2020"
+    }
+  ]
+}

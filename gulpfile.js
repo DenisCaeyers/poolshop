@@ -13,20 +13,20 @@ sass.compiler = require("node-sass");
 // Variables
 var paths = {
   styles: {
-    src: "./assets/public/sass/**/*.scss",
-    dest: "./assets/public/css"
+    src: "./assets/src/sass/**/*.scss",
+    dest: "./assets/public/css",
   },
   html: {
-    src: "./*.html"
+    src: "./*.html",
   },
   js: {
     src: "./assets/src/js/**/*.js",
-    dest: "./assets/public/js"
+    dest: "./assets/public/js",
   },
   img: {
     src: "./assets/src/img/**/*.*",
-    dest: "./assets/public/img"
-  }
+    dest: "./assets/public/img",
+  },
 };
 
 // SASS Compile Function
@@ -58,8 +58,8 @@ function img() {
 function watch() {
   browserSync.init({
     server: {
-      baseDir: "./"
-    }
+      baseDir: "./",
+    },
   });
   style();
   js();
