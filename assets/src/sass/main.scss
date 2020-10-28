@@ -13,6 +13,7 @@ h1 {
 h2 {
   text-align: center;
   color: $c-blue;
+  margin-bottom: $margin;
 }
 h5 {
   font-family: $f-title;
@@ -24,22 +25,77 @@ h5 {
 .header {
   position: relative;
   background-color: $c-blue;
-  height: 100vh;
+  .logo {
+    padding: 100px 30px;
+  }
 }
-
-.main {
-  background-color: $c-white;
-  padding: $padding;
+.uspwrapper {
+  background-color: #ededed;
   .usp {
     text-align: center;
-    height: 500px;
-    margin-top: 60px;
-    i {
-      color: lightgray;
+    padding: $padding;
 
-      margin-bottom: 30px;
+    div.col-md-4 {
+      margin-top: $margin;
+      margin-bottom: $margin;
+    }
+    i {
+      color: $c-blue;
+      margin-bottom: $margin;
     }
   }
+}
+.winkel {
+  text-align: center;
+  padding: $padding;
+  .col-md-8,
+  .col-md-4 {
+    margin-top: $margin;
+    margin-bottom: $margin;
+  }
+  .card {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  .openinghours {
+    table {
+      width: 100%;
+      margin-top: $margin;
+      .day {
+        text-align: right;
+        padding-right: 10px;
+      }
+      .hours {
+        text-align: left;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+.realisaties {
+  padding: $padding;
+}
+.partnerswrapper {
+  background-color: #ededed;
+  h2 {
+    color: gray;
+  }
+}
+.partners {
+  text-align: center;
+  padding: $padding;
+  img {
+    max-width: 150px;
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+}
+
+.map {
+  padding: 0;
+  margin: 0;
 }
 
 .logo {
@@ -53,33 +109,37 @@ h5 {
     }
   }
 }
-.footer {
+
+.footerwrapper {
   background-color: $c-blue;
-  color: $c-white;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  position: relative;
-  a {
-    color: white;
-    &:hover {
+    color: $c-white;
+    text-align: center;
+  .footer {
+    position: relative;
+    a {
       color: white;
+      &:hover {
+        color: white;
+      }
     }
-  }
-  .logo {
-    width: 200px;
-    margin: auto;
-    margin-bottom: 50px;
-  }
-  table {
-    width: 100%;
-    .day {
-      text-align: right;
-      padding-right: 10px;
+    .col-md-4 {
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
-    .hours {
-      text-align: left;
-      padding-left: 10px;
+    .logo {
+      width: 200px;
+      margin: auto;
+    }
+    table {
+      width: 100%;
+      .day {
+        text-align: right;
+        padding-right: 10px;
+      }
+      .hours {
+        text-align: left;
+        padding-left: 10px;
+      }
     }
   }
 }
@@ -90,4 +150,18 @@ h5 {
 
 i {
   margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .container,
+  .container-fluid {
+    padding-top: $padding * 2;
+    padding-bottom: $padding * 2;
+  }
+  .usp,
+  .partners,
+  .map,
+  .footerwrapper,.footer {
+    padding: 0;
+  }
 }
